@@ -6,8 +6,9 @@ require 'pp'
 require 'pry'
 
 def pretty_print_nds(nds)
-pp nds
-end
+  pp nds 
+  #binding.pry
+end 
 
 # # def print_first_directors_movie_titles
 #   def print_first_directors_movie_titles
@@ -24,15 +25,19 @@ end
 # # puts print_first_directors_movie_titles
 # end 
 
-def print_first_directors_movie_titles
-  
+def print_first_directors_movie_titles 
+  #print_first_directors_movie_titles loops over Spielberg’s movies and prints out their names with newlines (FAILED - 1)
+
   spielbergs_movies = directors_database[0][:movies]
-  i = 0 
+  i = 0
+
   while i < spielbergs_movies.count do 
   puts spielbergs_movies[i][:title]
-  i += 1 
-end 
-end 
+i += 1
+
+end
+end
+
   
   
 #   pp_variable = pretty_print_nds(nds)
